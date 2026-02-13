@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+requests
+python-dotenv
+pydantic
+groq
+wikipedia
+google-search-results
+websockets
+pydub
+numpy
+deepgram-sdk
+elevenlabs
+librosa
+scipy
+duckduckgo-search
