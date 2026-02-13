@@ -12,18 +12,11 @@ import uvicorn
 load_dotenv(override=True)
 
 # Build component imports
-try:
-    from backend.services.groq_service import generate_chat_response, generate_streaming_response
-    from backend.services.search_service import perform_search
-    from backend.services.wiki_service import get_wiki_summary
-    from backend.utils.router import detect_intent
-    from backend.voice.router import router as voice_router
-except ImportError:
-    from services.groq_service import generate_chat_response, generate_streaming_response
-    from services.search_service import perform_search
-    from services.wiki_service import get_wiki_summary
-    from utils.router import detect_intent
-    from voice.router import router as voice_router
+from services.groq_service import generate_chat_response, generate_streaming_response
+from services.search_service import perform_search
+from services.wiki_service import get_wiki_summary
+from utils.router import detect_intent
+from voice.router import router as voice_router
 
 # Initialize FastAPI app
 app = FastAPI(title="Apex Chatbot backend", version="1.0.0")
