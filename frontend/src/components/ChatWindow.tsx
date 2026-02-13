@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import MessageBubble from './MessageBubble';
-import api from '@/lib/api';
+import api from '../lib/api';
 import ChatInput from './ChatInput';
 
 interface ChatWindowProps {
